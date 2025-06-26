@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise Tracker</title>
+  </head>
+  <body>
+    <h1>Exercise Tracker API</h1>
+
+    <h2>Create User</h2>
+    <form action="/api/users" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" name="username" required />
+      <button type="submit">Create User</button>
+    </form>
+
+    <h2>Add Exercise</h2>
+    <form action="/api/users/:_id/exercises" method="POST">
+      <label for="userId">User ID:</label>
+      <input type="text" name="userId" required />
+      <br />
+      <label for="description">Description:</label>
+      <input type="text" name="description" required />
+      <br />
+      <label for="duration">Duration (minutes):</label>
+      <input type="number" name="duration" required />
+      <br />
+      <label for="date">Date (optional, yyyy-mm-dd):</label>
+      <input type="text" name="date" />
+      <br />
+      <button type="submit">Add Exercise</button>
+    </form>
+
+    <h2>Get User Logs</h2>
+    <form action="/api/users/:_id/logs" method="GET">
+      <label for="userId">User ID:</label>
+      <input type="text" name="userId" required />
+      <br />
+      <label for="from">From (yyyy-mm-dd):</label>
+      <input type="text" name="from" />
+      <br />
+      <label for="to">To (yyyy-mm-dd):</label>
+      <input type="text" name="to" />
+      <br />
+      <label for="limit">Limit:</label>
+      <input type="number" name="limit" />
+      <br />
+      <button type="submit">Get Logs</button>
+    </form>
+
+  </body>
+</html>
