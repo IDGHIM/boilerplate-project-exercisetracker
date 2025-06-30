@@ -1,4 +1,4 @@
-#  ( 🌐 version ) 
+# Exercise Tracker ( 🌐 version ) 
 
 🔗 **Live Website**: []()
 
@@ -7,10 +7,10 @@
 ---
 ## 🎯 Project Objective
 
-The goal of this project is to build a **XX** as part of the **XX** on [freeCodeCamp](https://www.freecodecamp.org/).
+The goal of this project is to build a **Exercise Tracker** as part of the **Back End Development and APIs Projects** on [freeCodeCamp](https://www.freecodecamp.org/).
 
 > 💡 Inspired by:  
-[]()  
+[https://exercise-tracker.freecodecamp.rocks/](https://exercise-tracker.freecodecamp.rocks/)  
 ⚠️ *Do not copy the demo project.*
 
 ---
@@ -32,17 +32,19 @@ The goal of this project is to build a **XX** as part of the **XX** on [freeCode
 
 ## ✅ Project Tests (User Stories)
 
-1. 
-2.
-3.
-4.
-5.
+1. You should provide your own project, not the example URL.
+2. You can `POST` to `/api/users` with form data username to create a new user.
+3. You can make a `GET` request to `/api/users` to get a list of all users.
+4. The `GET` request to `/api/users` returns an array.
+5. You can make a `GET` request to `/api/users/:_id/logs` to retrieve a full exercise log of any user.
+6. Each item in the log array that is returned from `GET /api/users/:_id/logs` is an object that should have a `description`, `duration`, and `date` properties.
+7. You can add `from`, `to` and `limit` parameters to a `GET /api/users/:_id/logs` request to retrieve part of the `log` of any user. `from` and `to` are `dates` in `yyyy-mm-dd` format. `limit` is an integer of how many logs to send back.
 
 ---
 
 ## 🖼️ Project Context
 
-This is one of the required projects to earn the **XX** from freeCodeCamp.  
+This is one of the required projects to earn the **Exericse Tracker** from freeCodeCamp.  
 Through this challenge, I learned how to:
 
 -  
